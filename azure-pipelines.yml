@@ -2,7 +2,7 @@ trigger:
 - '*'
 parameters:
 - name: image
-  displayName: Pool Image
+  displayName: release - images
   default: ubuntu-latest
   values:
   - windows-latest
@@ -15,7 +15,7 @@ parameters:
   displayName: Run Tests?
   type: boolean
   default: false
-  
+
 variables:
   buildConfiguration: 'Release'
   releaseBranchName: 'release'
